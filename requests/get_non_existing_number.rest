@@ -1,1 +1,7 @@
+### Local tests
+
 GET http://localhost:3001/api/persons/1000
+
+### Render tests
+
+GET https://atteaalt-full-stack-open-part-3.onrender.com/api/persons/1000
