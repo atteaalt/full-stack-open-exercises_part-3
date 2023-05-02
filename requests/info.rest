@@ -1,0 +1,6 @@
+### Local tests
+
+GET http://localhost:3001/info
+### Render tests
+
+GET https://atteaalt-full-stack-open-part-3.onrender.com/info

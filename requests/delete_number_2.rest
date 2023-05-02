@@ -1,7 +1,0 @@
-### Local tests
-
-DELETE  http://localhost:3001/api/persons/2
-
-### Render tests
-
-DELETE https://atteaalt-full-stack-open-part-3.onrender.com/api/persons/2

@@ -1,0 +1,7 @@
+### Local tests
+
+DELETE  http://localhost:3001/api/persons/6447bb64342f4323f2c6493e
+
+### Render tests
+
+DELETE https://atteaalt-full-stack-open-part-3.onrender.com/api/persons/6447bb64342f4323f2c6493e
