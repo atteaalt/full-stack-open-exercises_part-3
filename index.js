@@ -84,7 +84,9 @@ app.put("/api/persons/:id", (req, res, next) => {
     context: "query",
   })
     .then((updatedPerson) => res.json(updatedPerson))
-    .catch((error) => next(error));
+    .catch((error) => {
+      next(error);
+    });
 });
 
 app.get("/info", (req, res) => {
@@ -101,14 +103,15 @@ const unknownEndpoint = (request, response) => {
 
 app.use(unknownEndpoint);
 
-const errorHandler = (error, req, res) => {
+const errorHandler = (error, req, res, next) => {
   console.log(error.message);
 
   if (error.name === "CastError") {
-    return res.status(400).send({ error: "malformatted id" });
-  } else {
+    return res.status(400).send({ name: "malformatted id", ...error });
+  } else if (error.name === "ValidationError") {
     return res.status(400).json(error);
   }
+  return res.status(500).json(error);
 };
 
 app.use(errorHandler);
