@@ -5,7 +5,7 @@ Content-Type: application/json
 
 {
     "name": "Atte Aaltonen",
-    "number": "123 4567"
+    "number": "11-33333"
 }
 
 ###
@@ -14,7 +14,7 @@ POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {
-    "number": "123 4567"
+    "number": "11-33333"
 }
 
 ###
@@ -34,7 +34,7 @@ Content-Type: application/json
 
 {
     "name": "Atte Aaltonen",
-    "number": "123 4567"
+    "number": "12-224567"
 }
 
 ###
@@ -43,7 +43,7 @@ POST https://atteaalt-full-stack-open-part-3.onrender.com/api/persons/
 Content-Type: application/json
 
 {
-    "number": "123 4567"
+    "number": "12-224567"
 }
 
 ###
